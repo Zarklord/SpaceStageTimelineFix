@@ -23,7 +23,7 @@
 namespace SpaceStageTimelineFix {
 	long AttachDetours() {
 		long result = 0;
-		result |= sub_E396C0__detour::attach(Address(ModAPI::ChooseAddress(0x0, 0xE396C0)));
+		result |= sub_E396C0__detour::attach(Address(ModAPI::ChooseAddress(0xE39770, 0xE396C0)));
 
 		return result;
 	}
@@ -32,8 +32,12 @@ namespace SpaceStageTimelineFix {
 using namespace SpaceStageTimelineFix;
 
 uint32_t SpaceStageTimelineFix::sub_E396C0__detour::DETOUR(uint32_t instanceID, uint32_t* a2, uint32_t* a3, uint32_t* a4, uint32_t* a5) {
-	if (instanceID == id("crg_befriendedsomething") && Simulator::IsSpaceGame()) {
-		instanceID = id("spg_befriendedsomething");
+	if (instanceID == id("crg_befriendedsomething")) {
+		if (Simulator::IsSpaceGame()) {
+			instanceID = id("spg_befriendedsomething");
+		} else {
+			instanceID = id("_crg_befriendedsomething");
+		}
 	}
 	return original_function(instanceID, a2, a3, a4, a5);
 }

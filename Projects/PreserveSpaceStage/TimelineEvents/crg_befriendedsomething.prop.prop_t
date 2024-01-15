@@ -1,0 +1,25 @@
+key parent TimelineEvents!spg_Template.prop
+key timelineEventIcon consequence~!social.png
+bool timelineEventIsStackable true
+key timelineEventLayout 0x378C39D8
+texts timelineEventRolloverText
+	(timeline!0x05fa01a9) "CRG_BefriendedSomething (PLACEHOLDER)"
+end
+bool timelineEventShowDownArrow false
+texts timelineEventStackedRolloverText
+	(timeline!0x54f7eda3) "CRG_BefriendedSomething stacked rollover (PLACEHOLDER)"
+end
+keys timelineEventStopStackEvents
+	crg_earnedtraitattack
+	crg_earnedtraitmix
+	crg_earnedtraitsocial
+	spg_editedufo
+	spg_firstgrobencounter
+	spg_accessorizedcreature
+	spg_cgquasar
+	EP1_CaptainLevelUp
+	EP1_DiscoverPart
+end
+texts timelineEventTitle
+	(timeline!0x060b4227) "CRG_BefriendedSomething Title (PLACEHOLDER)"
+end

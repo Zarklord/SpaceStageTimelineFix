@@ -20,7 +20,7 @@ env:
 
 #Build Sporemod Variables
   SPOREMOD_DLLS_BUILD: '2.5.326'
-  SPOREMOD_PREFIX: 'UPE'
+  SPOREMOD_PREFIX: 'SpaceStageTimelineFix'
 
 jobs:
   build-packages:

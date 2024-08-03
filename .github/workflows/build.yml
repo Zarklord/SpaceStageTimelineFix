@@ -4,6 +4,8 @@ on:
   push:
     branches-ignore:
       - 'gh-pages'
+    tags:
+      - '*'
   pull_request:
   workflow_dispatch:
 

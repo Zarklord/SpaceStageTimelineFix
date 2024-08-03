@@ -1,9 +1,9 @@
 /****************************************************************************
-* Copyright (C) 2020 Zarklord
+* Copyright (C) 2020-2024 Zarklord
 *
-* This file is part of CellStagePartsAPI.
+* This file is part of SpaceStageTimelineFix.
 *
-* CellStagePartsAPI is free software: you can redistribute it and/or modify
+* SpaceStageTimelineFix is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
 * the Free Software Foundation, either version 3 of the License, or
 * (at your option) any later version.
@@ -14,16 +14,7 @@
 * GNU General Public License for more details.
 *
 * You should have received a copy of the GNU General Public License
-* along with CellStagePartsAPI.  If not, see <http://www.gnu.org/licenses/>.
+* along with SpaceStageTimelineFix.  If not, see <http://www.gnu.org/licenses/>.
 ****************************************************************************/
 
-#pragma once
-
-#include <Spore/BasicIncludes.h>
-
-namespace SpaceStageTimelineFix {
-	long AttachDetours();
-
-	static_detour(sub_E396C0__detour, uint32_t(uint32_t, uint32_t*, uint32_t*, uint32_t*, uint32_t*)) {};
-};
-
+#include "pch.h"

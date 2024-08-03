@@ -1,0 +1,10 @@
+<mod displayName="Space Stage Timeline Fix" unique="sstf" description="This mod fixes the bug screwing up your timeline when befriending creatures in adventure mode, while also preserving the timeline for creatures befriended in creature stage." isExperimental="$SPOREMOD_EXPERIMENTAL" installerSystemVersion="1.0.1.2" dllsBuild="$SPOREMOD_DLLS_BUILD">
+	<prerequisite>SpaceStageTimelineFix.dll</prerequisite>
+	<prerequisite>SpaceStageTimelineFix.pdb</prerequisite>
+	<prerequisite game="GalacticAdventures">SpaceStageTimelineFix.package</prerequisite>
+
+	<remove>SpaceStageTimelineFix.dll</remove>
+	<remove>SpaceStageTimelineFix.pdb</remove>
+	<remove game="GalacticAdventures">SpaceStageTimelineFix*</remove>
+	<remove game="GalacticAdventures">GASpaceTimelineFix*</remove>
+</mod>

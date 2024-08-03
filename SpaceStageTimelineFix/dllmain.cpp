@@ -73,7 +73,7 @@ BOOL APIENTRY DllMain( HMODULE hModule,
 	{
 	case DLL_PROCESS_ATTACH:
 		PrepareDetours(hModule);
-		timelineEventGameLevel_detour::attach(Address(ModAPI::ChooseAddress(0x0, 0xE48EB0)));
+		timelineEventGameLevel_detour::attach(Address(ModAPI::ChooseAddress(0xE49500, 0xE48EB0)));
 		CommitDetours();
 		break;
 

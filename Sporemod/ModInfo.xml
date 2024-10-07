@@ -5,6 +5,8 @@
 
 	<remove>SpaceStageTimelineFix.dll</remove>
 	<remove>SpaceStageTimelineFix.pdb</remove>
+	<remove game="GalacticAdventures">SpaceStageTimelineFix.package</remove>
+	<!--Remove stuff from old versions of this mod-->
 	<remove game="GalacticAdventures">SpaceStageTimelineFix*</remove>
 	<remove game="GalacticAdventures">GASpaceTimelineFix*</remove>
 </mod>

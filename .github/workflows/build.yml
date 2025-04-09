@@ -59,7 +59,7 @@ jobs:
 
   build-dlls:
     name: Build DLLs
-    runs-on: windows-2022
+    runs-on: windows-2025
     steps:
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v2

@@ -50,7 +50,7 @@ jobs:
           cd "SporeModder FX"
           java -jar SporeModderFX.jar pack ../Projects/SpaceStageTimelineFix ../Packages/SpaceStageTimelineFix.package
       - name: Upload Packages
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: packages
           retention-days: 1
@@ -91,7 +91,7 @@ jobs:
             "/p:SporeSDKPath=${{ github.workspace }}\Spore-ModAPI\,SporeLuaSdkPath=${{ github.workspace }}\Spore-LuaAPI\,SporeLauncherPath=${{ github.workspace }}\" `
             "/p:OutDir=${{ github.workspace }}\coreLibs\" /clp:Summary /v:m
       - name: Upload DLL
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: dll
           retention-days: 1
@@ -108,7 +108,7 @@ jobs:
       contents: write
     steps:      
       - uses: actions/checkout@v4
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           path: ${{ github.workspace }}/Sporemod
           merge-multiple: true
@@ -142,7 +142,7 @@ jobs:
           custom: '-j -9'
 
       - name: Upload sporemod artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: sporemod
           retention-days: 30

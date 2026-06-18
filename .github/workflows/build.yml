@@ -27,7 +27,7 @@ jobs:
     name: Build Packages
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
@@ -66,7 +66,7 @@ jobs:
 
       # Build Spore-ModAPI
       - name: Checkout Spore-ModAPI
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: 'emd4600/Spore-ModAPI'
           ref: ${{ env.SPORE_MOD_API_REF }}
@@ -80,7 +80,7 @@ jobs:
 
       #Build SpaceStageTimelineFix
       - name: Checkout SpaceStageTimelineFix
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           path: ${{ github.event.repository.name }}
           submodules: 'true'
@@ -107,7 +107,7 @@ jobs:
     permissions:
       contents: write
     steps:      
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/download-artifact@v4
         with:
           path: ${{ github.workspace }}/Sporemod
